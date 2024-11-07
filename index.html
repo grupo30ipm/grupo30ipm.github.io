@@ -67,24 +67,29 @@
         </div>
     </div>
 
-
     <!-- JavaScript for Modal -->
     <script>
         // Function to open the modal and show the PDF
-        function openModal(event, student) {
+        function openModal(event, phaseOrStudent) {
             event.preventDefault();  // Prevent the page from scrolling to the top
             var modal = document.getElementById('pdfModal');
             var pdfPreview = document.getElementById('pdfPreview');
 
-            // Set the source of the iframe depending on the clicked student
-            if (student === 'afonso') {
+            // Set the source of the iframe depending on the clicked student or phase
+            if (phaseOrStudent === 'afonso') {
                 pdfPreview.src = 'assets/trabalho-afonso.pdf';
-            } else if (student === 'duarte') {
+            } else if (phaseOrStudent === 'duarte') {
                 pdfPreview.src = 'assets/trabalho-duarte.pdf';
-            } else if (student === 'jose') {
+            } else if (phaseOrStudent === 'jose') {
                 pdfPreview.src = 'assets/trabalho-jose.pdf';
-            } else if (student === 'ricardo') {
+            } else if (phaseOrStudent === 'ricardo') {
                 pdfPreview.src = 'assets/trabalho-ricardo.pdf';
+            } else if (phaseOrStudent === 'link-para-fase-1') {
+                pdfPreview.src = 'assets/phase1.pdf';
+            } else if (phaseOrStudent === 'link-para-fase-2') {
+                pdfPreview.src = 'assets/phase2.pdf';
+            } else if (phaseOrStudent === 'link-para-fase-3') {
+                pdfPreview.src = 'assets/phase3.pdf';
             }
 
             // Show the modal
@@ -104,23 +109,45 @@
         <h2>Fases do Projeto</h2>
         <div class="phase">
             <h3>Fase 1</h3>
-            <button onclick="openModal('link-para-fase-1')">
-                <i class="fas fa-eye"></i> Preview
-            </button>
+            <div>
+                <button onclick="openModal(event, 'link-para-fase-1')">
+                    <i class="fas fa-eye"></i> Preview
+                </button>
+                <a href="assets/phase1.pdf" download="phase1.pdf">
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </a>
+            </div>
         </div>
         <div class="phase">
             <h3>Fase 2</h3>
-            <button onclick="openModal('link-para-fase-2')">
-                <i class="fas fa-eye"></i> Preview
-            </button>
+            <div>
+                <button onclick="openModal(event, 'link-para-fase-2')">
+                    <i class="fas fa-eye"></i> Preview
+                </button>
+                <a href="assets/phase2.pdf" download="phase2.pdf">
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </a>
+            </div>
         </div>
         <div class="phase">
             <h3>Fase 3</h3>
-            <button onclick="openModal('link-para-fase-3')">
-                <i class="fas fa-eye"></i> Preview
-            </button>
+            <div>
+                <button onclick="openModal(event, 'link-para-fase-3')">
+                    <i class="fas fa-eye"></i> Preview
+                </button>
+                <a href="assets/phase3.pdf" download="phase3.pdf">
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
+
 
     <footer>
         <p>© 2024 Grupo 30 IPM</p>
