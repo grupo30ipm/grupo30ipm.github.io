@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f6f8fa;
+    background-color: #f4f4f9;
     color: #333;
 }
 
@@ -29,38 +29,21 @@ h1 {
 
 p {
     font-size: 1rem;
-}
-
-nav {
-    width: 20%;
-    float: left;
-    margin-top: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    margin: 10px 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #0366d6;
-    font-size: 1.1rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+    margin-top: 10px; /* Espaço acima do número de aluno */
+    margin-bottom: 10px; /* Espaço abaixo do número de aluno */
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 25%;
     margin-top: 20px;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    margin-top: 20px; /* Aumenta a distância acima do nome */
+    margin-bottom: 10px;
 }
 
 main .row {
@@ -71,11 +54,14 @@ main .row {
 }
 
 main section {
-    width: 48%; /* Ajusta a largura de cada seção para duas por linha */
+    width: 48%;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 20px;
 }
 
 main h2 {
@@ -88,14 +74,34 @@ main img {
     height: auto;
     display: block;
     margin-bottom: 10px;
+    /* Adiciona uma borda arredondada */
+    border-radius: 5px;
+    /* centrar a imagem */
+    margin: 0 auto;
 }
 
 main a {
     text-decoration: none;
     color: #0366d6;
     font-size: 1.1rem;
+    margin-top: 10px; /* Espaço acima do link */
+    display: inline-block; /* Para que a margem superior funcione */
 }
 
 main a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background-color: white; /* Fundo branco */
+    color: #0366d6;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
