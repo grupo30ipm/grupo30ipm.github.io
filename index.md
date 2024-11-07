@@ -1,41 +1,33 @@
 # Grupo 30 - Trabalhos
 
-Bem-vindo à página de trabalhos do grupo 30. O grupo é composto pelos seguintes membros:
+Bem-vindo à página de trabalhos do grupo 30.
 
 ## Membros do Grupo
 
-| Nome               | Foto                                     | Trabalhos |
-|--------------------|------------------------------------------|-----------|
-| Afonso Proença     | ![Foto Afonso](link_para_foto_afonso)    | [Trabalhos de Afonso](afonso.md) |
-| Duarte Terrível    | ![Foto Duarte](link_para_foto_duarte)    | [Trabalhos de Duarte](duarte.md) |
-| José Romano        | ![Foto José](assets/jose_romano_foto.jpg)        | [Trabalhos de José](jose.md)     |
-| Ricardo Bernardino | ![Foto Ricardo](link_para_foto_ricardo)  | [Trabalhos de Ricardo](ricardo.md) |
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 
-> **Nota**: Substitua `link_para_foto_nome` com o link real das fotos.
+<div style="text-align: center; margin: 20px;">
+  <img src="assets/afonso.jpg" alt="Foto de Afonso" width="150" height="150" style="border-radius: 50%;">
+  <p>Afonso Proença</p>
+  <a href="afonso.md">Trabalhos de Afonso</a>
+</div>
 
-Cada membro possui uma página com os seus trabalhos, e cada trabalho possui uma pré-visualização dos ficheiros (ex.: imagens ou vídeos).
+<div style="text-align: center; margin: 20px;">
+  <img src="assets/duarte.jpg" alt="Foto de Duarte" width="150" height="150" style="border-radius: 50%;">
+  <p>Duarte Terrível</p>
+  <a href="duarte.md">Trabalhos de Duarte</a>
+</div>
 
----
+<div style="text-align: center; margin: 20px;">
+  <img src="assets/jose.jpg" alt="Foto de José" width="150" height="150" style="border-radius: 50%;">
+  <p>José Romano</p>
+  <a href="jose.md">Trabalhos de José</a>
+</div>
 
-## Pré-visualização dos Trabalhos
+<div style="text-align: center; margin: 20px;">
+  <img src="assets/ricardo.jpg" alt="Foto de Ricardo" width="150" height="150" style="border-radius: 50%;">
+  <p>Ricardo Bernardino</p>
+  <a href="ricardo.md">Trabalhos de Ricardo</a>
+</div>
 
-As páginas individuais terão uma seção de pré-visualização dos ficheiros. Por exemplo, ao clicar em "Trabalhos de Afonso", você será levado à página `afonso.md`, onde cada trabalho terá um preview.
-
----
-
-### Exemplo de Página Individual (`afonso.md`)
-
-No arquivo `afonso.md`, liste os trabalhos com links e pré-visualizações:
-
-```markdown
-# Trabalhos de Afonso Proença
-
-## Trabalho 1: [Nome do Trabalho](link_para_o_trabalho)
-![Preview](link_para_preview_imagem)  
-Descrição breve do trabalho.
-
-## Trabalho 2: [Nome do Trabalho](link_para_o_trabalho)
-![Preview](link_para_preview_imagem)  
-Descrição breve do trabalho.
-
-...
+</div>
