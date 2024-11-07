@@ -15,7 +15,7 @@ Número de Aluno: 59791
 [Link para o trabalho](link-para-o-trabalho-duarte)
 
 ### José Romano
-<img src="assets/jose.jpg" width="600" height="300" />  
+<img src="assets/jose.jpg" width="300" height="300" />  
 Número de Aluno: 59241  
 [Link para o trabalho](link-para-o-trabalho-jose)
 
