@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: #0366d6;
+    background: linear-gradient(to right, #28a745, #0366d6); /* Degradê de verde para azul */
     color: #fff;
     padding: 20px 0;
     text-align: center;
