@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #28a745, #0366d6); /* Degradê de verde para azul */
+    background: linear-gradient(to right, #28a745, #0366d6);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -29,8 +29,8 @@ h1 {
 
 p {
     font-size: 1rem;
-    margin-top: 10px; /* Espaço acima do número de aluno */
-    margin-bottom: 10px; /* Espaço abaixo do número de aluno */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 main {
@@ -42,7 +42,7 @@ main {
 
 main h2 {
     font-size: 1.8rem;
-    margin-top: 20px; /* Aumenta a distância acima do nome */
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -59,14 +59,9 @@ main section {
     text-align: center;
     background: white;
     border: 1px solid #ddd;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-}
-
-main h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
 }
 
 main img {
@@ -74,9 +69,7 @@ main img {
     height: auto;
     display: block;
     margin-bottom: 10px;
-    /* Adiciona uma borda arredondada */
     border-radius: 5px;
-    /* centrar a imagem */
     margin: 0 auto;
 }
 
@@ -84,21 +77,45 @@ main a {
     text-decoration: none;
     color: #0366d6;
     font-size: 1.1rem;
-    margin-top: 10px; /* Espaço acima do link */
-    display: inline-block; /* Para que a margem superior funcione */
+    margin-top: 10px;
+    display: inline-block;
 }
 
 main a:hover {
     text-decoration: underline;
 }
 
+/* Preview Section Styling */
+.preview {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* Initially hidden */
+}
+
+.preview p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.preview iframe {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 footer {
-    background-color: white; /* Fundo branco */
+    background-color: white;
     color: #0366d6;
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer p {

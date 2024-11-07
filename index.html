@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo 30 - Trabalhos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <header>
@@ -23,15 +25,24 @@
                     <img src="link-para-foto-afonso.jpg" width="300" height="300" />
                     <h2>Afonso Proença</h2>
                     <p>Número de Aluno: 59158</p>
-                    <a href="link-para-o-trabalho-afonso">Link para o trabalho</a>
+                    <a href="#" onclick="togglePreview(event, 'preview-afonso')">Link para o trabalho</a>
+                    <div class="preview" id="preview-afonso">
+                        <p>Descrição breve do trabalho de Afonso.</p>
+                        <iframe src="assets/trabalho-afonso.pdf" width="100%" height="400px"
+                            style="border: none;"></iframe>
+                    </div>
                 </section>
 
                 <section id="duarte">
-                    
                     <img src="link-para-foto-duarte.jpg" width="300" height="300" />
                     <h2>Duarte Terrível</h2>
                     <p>Número de Aluno: 59791</p>
-                    <a href="link-para-o-trabalho-duarte">Link para o trabalho</a>
+                    <a href="#" onclick="togglePreview(event, 'preview-duarte')">Link para o trabalho</a>
+                    <div class="preview" id="preview-duarte">
+                        <p>Descrição breve do trabalho de Duarte.</p>
+                        <iframe src="assets/trabalho-duarte.pdf" width="100%" height="400px"
+                            style="border: none;"></iframe>
+                    </div>
                 </section>
             </div>
 
@@ -41,15 +52,24 @@
                     <img src="assets/jose.jpg" width="300" height="300" />
                     <h2>José Romano</h2>
                     <p>Número de Aluno: 59241</p>
-                    <a href="link-para-o-trabalho-jose">Link para o trabalho</a>
+                    <a href="#" onclick="togglePreview(event, 'preview-jose')">Link para o trabalho</a>
+                    <div class="preview" id="preview-jose">
+                        <p>Descrição breve do trabalho de José.</p>
+                        <iframe src="assets/trabalho-jose.pdf" width="100%" height="400px"
+                            style="border: none;"></iframe>
+                    </div>
                 </section>
 
                 <section id="ricardo">
-                    
                     <img src="link-para-foto-ricardo.jpg" width="300" height="300" />
                     <h2>Ricardo Bernardino</h2>
                     <p>Número de Aluno: 67476</p>
-                    <a href="link-para-o-trabalho-ricardo">Link para o trabalho</a>
+                    <a href="#" onclick="togglePreview(event, 'preview-ricardo')">Link para o trabalho</a>
+                    <div class="preview" id="preview-ricardo">
+                        <p>Descrição breve do trabalho de Ricardo.</p>
+                        <iframe src="assets/trabalho-ricardo.pdf" width="100%" height="400px"
+                            style="border: none;"></iframe>
+                    </div>
                 </section>
             </div>
         </main>
@@ -57,5 +77,19 @@
     <footer>
         <p>© 2024 Grupo 30 IPM</p>
     </footer>
+
+    <!-- JavaScript for Toggle Preview -->
+    <script>
+        function togglePreview(event, previewId) {
+            event.preventDefault();  // Prevent the page from scrolling to the top
+            var preview = document.getElementById(previewId);
+            if (preview.style.display === "none" || preview.style.display === "") {
+                preview.style.display = "block";
+            } else {
+                preview.style.display = "none";
+            }
+        }
+    </script>
 </body>
+
 </html>
