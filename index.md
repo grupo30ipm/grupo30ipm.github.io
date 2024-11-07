@@ -4,18 +4,18 @@ Conheça nossos membros e seus respectivos trabalhos
 
 ## Membros:
 
-### 1. Afonso Proença
+### Afonso Proença
 ![Afonso](link-para-foto-afonso.jpg)  
 Número de Aluno: 59158  
 [Link para o trabalho](link-para-o-trabalho-afonso)
 
-### 2. Duarte Terrível
+### Duarte Terrível
 ![Duarte](link-para-foto-duarte.jpg)  
 Número de Aluno: 59791  
 [Link para o trabalho](link-para-o-trabalho-duarte)
 
-### 3. José Romano
-![José](link-para-foto-jose.jpg)  
+### José Romano
+![José](assets/jose.jpg) 
 Número de Aluno: 59241  
 [Link para o trabalho](link-para-o-trabalho-jose)
 
