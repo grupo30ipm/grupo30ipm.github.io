@@ -1,3 +1,4 @@
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +11,87 @@ body {
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Hide any overflow */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black with opacity */
+    padding-top: 50px;
+    /* To prevent content from being too close to the top */
 }
 
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    /* Max width for larger screens */
+    position: relative;
+    overflow: hidden;
+    /* Hide unnecessary overflow */
+    height: 80%;
+    /* Set a fixed height to make it taller */
+    max-height: 90%;
+    /* Ensure it doesn't overflow */
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    /* Move the button up slightly */
+    right: 20px;
+    /* Move the button to the right */
+    font-size: 36px;
+    /* Larger close button */
+    font-weight: bold;
+    color: #0366d6;
+    cursor: pointer;
+    background-color: #fff;
+    /* White background */
+    border: 2px solid #0366d6;
+    /* Border color */
+    border-radius: 50%;
+    /* Make the button circular */
+    width: 50px;
+    /* Set the button width */
+    height: 50px;
+    /* Set the button height */
+    text-align: center;
+    /* Center the icon inside */
+    line-height: 50px;
+    /* Vertically center the text */
+}
+
+.close:hover,
+.close:focus {
+    background-color: #0366d6;
+    /* Background color when hovered */
+    color: white;
+    /* Change icon color when hovered */
+    border-color: #fff;
+    /* Change border color when hovered */
+    text-decoration: none;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+    /* Take up full height of the modal */
+    border: none;
+}
+
+/* Header Styles */
 header {
     background: linear-gradient(to right, #28a745, #0366d6);
     color: #fff;
@@ -29,8 +106,12 @@ h1 {
 
 p {
     font-size: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+}
+
+/* Main Content Layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 main {
@@ -38,12 +119,6 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-}
-
-main h2 {
-    font-size: 1.8rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 main .row {
@@ -70,7 +145,6 @@ main img {
     display: block;
     margin-bottom: 10px;
     border-radius: 5px;
-    margin: 0 auto;
 }
 
 main a {
@@ -85,30 +159,7 @@ main a:hover {
     text-decoration: underline;
 }
 
-/* Preview Section Styling */
-.preview {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: none;
-    /* Initially hidden */
-}
-
-.preview p {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.preview iframe {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
+/* Footer Styles */
 footer {
     background-color: white;
     color: #0366d6;
