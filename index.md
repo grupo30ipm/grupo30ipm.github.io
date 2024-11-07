@@ -8,7 +8,7 @@ Bem-vindo à página de trabalhos do grupo 30. O grupo é composto pelos seguint
 |--------------------|------------------------------------------|-----------|
 | Afonso Proença     | ![Foto Afonso](link_para_foto_afonso)    | [Trabalhos de Afonso](afonso.md) |
 | Duarte Terrível    | ![Foto Duarte](link_para_foto_duarte)    | [Trabalhos de Duarte](duarte.md) |
-| José Romano        | ![Foto José](link_para_foto_jose)        | [Trabalhos de José](jose.md)     |
+| José Romano        | ![Foto José](assets/jose_romano_foto.jpg)        | [Trabalhos de José](jose.md)     |
 | Ricardo Bernardino | ![Foto Ricardo](link_para_foto_ricardo)  | [Trabalhos de Ricardo](ricardo.md) |
 
 > **Nota**: Substitua `link_para_foto_nome` com o link real das fotos.
