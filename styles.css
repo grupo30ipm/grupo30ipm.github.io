@@ -173,3 +173,51 @@ footer p {
     margin: 0;
     font-size: 1rem;
 }
+
+.phases {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.phase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.phase h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.phase button {
+    padding: 10px 20px;
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.phase button i {
+    margin-right: 10px;
+}
+
+.phase button:hover {
+    background-color: #024a9b;
+}
