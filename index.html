@@ -3,32 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Projeto GitHub</title>
+  <title>Grupo 30 - Trabalhos</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cayman@1.0.1/dist/cayman.min.css">
+  <style>
+    .team-member {
+      text-align: center;
+      margin: 20px;
+    }
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .team-member a {
+      display: block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .team-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .team-member div {
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
-    <h1>Bem-vindo ao Grupo 30</h1>
-    <p>Conheça nossos trabalhos</p>
+    <h1>Grupo 30 - Trabalhos</h1>
+    <p>Conheça nossos membros e seus respectivos trabalhos</p>
   </header>
+  
   <main>
-    <section>
-      <h2>Afonso Proença</h2>
-      <a href="https://link-para-o-trabalho-1">Ver trabalho 1</a>
-    </section>
-    <section>
-      <h2>Duarte Terrível</h2>
-      <a href="https://link-para-o-trabalho-2">Ver trabalho 2</a>
-    </section>
-    <section>
-      <h2>José Romano</h2>
-      <a href="https://link-para-o-trabalho-3">Ver trabalho 3</a>
-    </section>
-    <section>
-      <h2>Ricardo Bernardino</h2>
-      <a href="https://link-para-o-trabalho-4">Ver trabalho 4</a>
-    </section>
+    <div class="team-container">
+      <!-- Linha 1: Afonso e Duarte -->
+      <div class="team-member">
+        <img src="link-para-foto-afonso.jpg" alt="Afonso Proença">
+        <div>
+          <h3>Afonso Proença</h3>
+          <p>Número de Aluno: 123456</p>
+          <a href="link-para-o-trabalho-afonso">Ver Trabalho</a>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="link-para-foto-duarte.jpg" alt="Duarte Terrível">
+        <div>
+          <h3>Duarte Terrível</h3>
+          <p>Número de Aluno: 654321</p>
+          <a href="link-para-o-trabalho-duarte">Ver Trabalho</a>
+        </div>
+      </div>
+
+      <!-- Linha 2: José e Ricardo -->
+      <div class="team-member">
+        <img src="link-para-foto-jose.jpg" alt="José Romano">
+        <div>
+          <h3>José Romano</h3>
+          <p>Número de Aluno: 112233</p>
+          <a href="link-para-o-trabalho-jose">Ver Trabalho</a>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="link-para-foto-ricardo.jpg" alt="Ricardo Bernardino">
+        <div>
+          <h3>Ricardo Bernardino</h3>
+          <p>Número de Aluno: 332211</p>
+          <a href="link-para-o-trabalho-ricardo">Ver Trabalho</a>
+        </div>
+      </div>
+    </div>
   </main>
+
   <footer>
     <p>&copy; 2024 Grupo 30</p>
   </footer>
