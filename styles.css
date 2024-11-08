@@ -91,9 +91,22 @@ body {
     border: none;
 }
 
-/* Header Styles */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 header {
     background: linear-gradient(to right, #28a745, #0366d6);
+    background-size: 200% 200%; /* Ajuste o tamanho do fundo para permitir a animação */
+    animation: gradientAnimation 5s ease infinite; /* Aplica a animação */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -203,6 +216,7 @@ footer p {
     width: 100%;
 }
 
+
 .phases {
     margin-top: 40px;
     text-align: center;
@@ -212,14 +226,14 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     background: url('assets/logo.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: cover; 
     opacity: 1.0; /* Ajuste a opacidade conforme necessário */
 }
 
 .phases h2 {
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Contorno preto */
 }
 
@@ -228,13 +242,19 @@ footer p {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin: 20px auto;
     padding: 10px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 50%;
     gap: 20px;
-    /* Adds space between buttons */
+    
+}
+
+.phase h3 {
+    font-size: 2rem;
+    ;
 }
 
 .phase button {
