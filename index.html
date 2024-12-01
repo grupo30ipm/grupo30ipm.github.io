@@ -92,6 +92,8 @@
                 pdfPreview.src = 'assets/phase3.pdf';
             } else if (phaseOrStudent === 'link-para-fase-4') {
                 pdfPreview.src = 'assets/phase4.pdf';
+            } else if(phaseOrStudent === 'link-para-fase-5') {
+                pdfPreview.src = 'assets/phase5.pdf';
             }
 
             // Show the modal
@@ -157,6 +159,19 @@
                     <i class="fas fa-eye"></i> Preview
                 </button>
                 <a href="assets/phase4.pdf" download="phase4.pdf">
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="phase">
+            <h3>Fase 5 - Avaliação Heurística</h3>
+            <div>
+                <button onclick="openModal(event, 'link-para-fase-5')">
+                    <i class="fas fa-eye"></i> Preview
+                </button>
+                <a href="assets/phase5.pdf" download="phase5.pdf">
                     <button class="download-btn">
                         <i class="fas fa-download"></i> Download
                     </button>
