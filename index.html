@@ -12,29 +12,29 @@
 
     <header>
         <div class="container">
-            <h1>Grupo 30 - IPM</h1>
-            <p>Página dedicada a apresentação dos membros do grupo e respetivos trabalhos das aulas práticas, incluindo o projeto Crewcodile.</p>
+            <h1>Group 30 - IPM</h1>
+            <p>Page dedicated to presenting the members of the group and their work from the practical classes, including the Crewcodile project.</p>
         </div>
     </header>
 
     <div class="container">
         <main>
             <div class="members">
-                <h1>Membros</h2>
+                <h1>Members</h2>
                 <!-- Linha 1: Afonso e Duarte -->
                 <div class="row">
                     <section id="afonso">
                         <img src="assets/afonso.jpg" width="300" height="300" />
                         <h2>Afonso Proença</h2>
-                        <p>Número de Aluno: 59158</p>
-                        <a href="#" onclick="openModal(event, 'afonso')">Link para o trabalho</a>
+                        <p>Student Number: 59158</p>
+                        <a href="#" onclick="openModal(event, 'afonso')">Link for the assignment</a>
                     </section>
 
                     <section id="duarte">
                         <img src="assets/duarte.jpg" width="430" height="300" />
                         <h2>Duarte Terrível</h2>
-                        <p>Número de Aluno: 59791</p>
-                        <a href="#" onclick="openModal(event, 'duarte')">Link para o trabalho</a>
+                        <p>Student Number: 59791</p>
+                        <a href="#" onclick="openModal(event, 'duarte')">Link for the assignment</a>
                     </section>
                 </div>
 
@@ -43,15 +43,15 @@
                     <section id="jose">
                         <img src="assets/jose.jpg" width="300" height="300" />
                         <h2>José Romano</h2>
-                        <p>Número de Aluno: 59241</p>
-                        <a href="#" onclick="openModal(event, 'jose')">Link para o trabalho</a>
+                        <p>Student Number: 59241</p>
+                        <a href="#" onclick="openModal(event, 'jose')">Link for the assignment</a>
                     </section>
 
                     <section id="ricardo">
                         <img src="assets/ricardo.jpg" width="300" height="300" />
                         <h2>Ricardo Bernardino</h2>
-                        <p>Número de Aluno: 67476</p>
-                        <a href="#" onclick="openModal(event, 'ricardo')">Link para o trabalho</a>
+                        <p>Student Number: 67476</p>
+                        <a href="#" onclick="openModal(event, 'ricardo')">Link for the assignment</a>
                     </section>
                 </div>
             </div>
@@ -85,15 +85,19 @@
             } else if (phaseOrStudent === 'ricardo') {
                 pdfPreview.src = 'assets/trabalho-ricardo.pdf';
             } else if (phaseOrStudent === 'link-para-fase-1') {
-                pdfPreview.src = 'assets/phase1.pdf';
+                pdfPreview.src = 'assets/G30_stage1.pdf';
             } else if (phaseOrStudent === 'link-para-fase-2') {
-                pdfPreview.src = 'assets/phase2.pdf';
+                pdfPreview.src = 'assets/G30_stage2.pdf';
             } else if (phaseOrStudent === 'link-para-fase-3') {
-                pdfPreview.src = 'assets/phase3.pdf';
+                pdfPreview.src = 'assets/G30_stage3.pdf';
             } else if (phaseOrStudent === 'link-para-fase-4') {
-                pdfPreview.src = 'assets/phase4.pdf';
+                pdfPreview.src = 'assets/G30_stage4.pdf';
             } else if(phaseOrStudent === 'link-para-fase-5') {
-                pdfPreview.src = 'assets/phase5.pdf';
+                pdfPreview.src = 'assets/G30_stage5.pdf';
+            } else if(phaseOrStudent === 'link-para-fase-5_2') {
+                pdfPreview.src = 'assets/G30_stage5_2.pdf';
+            } else if(phaseOrStudent === 'link-para-fase-6') {
+                pdfPreview.src = 'assets/G30_stage6.pdf';
             }
 
             // Show the modal
@@ -111,15 +115,15 @@
 
 
     <div class="phases">
-        <h2>Projeto Crewcodile</h2>
+        <h2>Crewcodile Project</h2>
         
         <div class="phase">
-            <h3>Fase 1 - Proposta de Projeto</h3>
+            <h3>Stage 1 - Project Proposal</h3>
             <div>
                 <button onclick="openModal(event, 'link-para-fase-1')">
                     <i class="fas fa-eye"></i> Preview
                 </button>
-                <a href="assets/phase1.pdf" download="phase1.pdf">
+                <a href="assets/G30_stage1.pdf" download="G30_stage1.pdf">
                     <button class="download-btn">
                         <i class="fas fa-download"></i> Download
                     </button>
@@ -127,12 +131,12 @@
             </div>
         </div>
         <div class="phase">
-            <h3>Fase 2 - Análise de Users e Tasks</h3>
+            <h3>Stage 2: User and task analysis</h3>
             <div>
                 <button onclick="openModal(event, 'link-para-fase-2')">
                     <i class="fas fa-eye"></i> Preview
                 </button>
-                <a href="assets/phase2.pdf" download="phase2.pdf">
+                <a href="assets/G30_stage2.pdf" download="G30_stage2.pdf">
                     <button class="download-btn">
                         <i class="fas fa-download"></i> Download
                     </button>
@@ -140,12 +144,12 @@
             </div>
         </div>
         <div class="phase">
-            <h3>Fase 3 - Cenários e Protótipo em Papel</h3>
+            <h3>Stage 3: Scenarios and Paper Prototyping</h3>
             <div>
                 <button onclick="openModal(event, 'link-para-fase-3')">
                     <i class="fas fa-eye"></i> Preview
                 </button>
-                <a href="assets/phase3.pdf" download="phase3.pdf">
+                <a href="assets/G30_stage3.pdf" download="G30_stage3.pdf">
                     <button class="download-btn">
                         <i class="fas fa-download"></i> Download
                     </button>
@@ -153,12 +157,12 @@
             </div>
         </div>
         <div class="phase">
-            <h3>Fase 4 - Protótipo Funcional</h3>
+            <h3>Stage 4: Functional Prototype</h3>
             <div>
                 <button onclick="openModal(event, 'link-para-fase-4')">
                     <i class="fas fa-eye"></i> Preview
                 </button>
-                <a href="assets/phase4.pdf" download="phase4.pdf">
+                <a href="assets/G30_stage4.pdf" download="G30_stage4.pdf">
                     <button class="download-btn">
                         <i class="fas fa-download"></i> Download
                     </button>
@@ -166,12 +170,39 @@
             </div>
         </div>
         <div class="phase">
-            <h3>Fase 5 - Avaliação Heurística</h3>
+            <h3>Stage 5.1: Heuristic evaluation of Reclip</h3>
             <div>
                 <button onclick="openModal(event, 'link-para-fase-5')">
                     <i class="fas fa-eye"></i> Preview
                 </button>
-                <a href="assets/phase5.pdf" download="phase5.pdf">
+                <a href="assets/G30_stage5.pdf" download="G30_stage5.pdf">
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="phase">
+            <h3>Stage 5: Heuristic evaluation of Crewcodile</h3>
+            <div>
+                <button onclick="openModal(event, 'link-para-fase-5_2')">
+                    <i class="fas fa-eye"></i> Preview
+                </button>
+                <a href="assets/G30_stage5_2.pdf" download="G30_stage5_2.pdf">
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="phase">
+            <h3>Stage 6: Evaluation results and presentation of the
+                final project</h3>
+            <div>
+                <button onclick="openModal(event, 'link-para-fase-6')">
+                    <i class="fas fa-eye"></i> Preview
+                </button>
+                <a href="assets/G30_stage6.pdf" download="G30_stage6.pdf">
                     <button class="download-btn">
                         <i class="fas fa-download"></i> Download
                     </button>
@@ -182,7 +213,7 @@
 
 
     <footer>
-        <p>© 2024 Grupo 30 IPM</p>
+        <p> ©2024 Group 30 IPM</p>
     </footer>
 
 </body>
